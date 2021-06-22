@@ -134,7 +134,7 @@ function handleKeyDownSemester2Grades(event) {
  * @return {void}
  */
 function calcAverage(endpoint, grades, callback) {
-    var baseURI = "http://localhost:3000";
+    var baseURI = "https://api-calculo-notas-ftt.herokuapp.com";
     var uriComplete = baseURI + endpoint + "/" + grades.join("/")
 
     $.ajax({

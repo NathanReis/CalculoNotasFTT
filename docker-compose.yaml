@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+    api_server:
+        build:
+            context: ./
+        container_name: calculo_notas_ftt_api
+        ports:
+            - 3000:80
+        volumes:
+            - ./:/var/www/html
+        working_dir: /var/www/html
+        command: sh -c "composer install && apache2-foreground"
+        networks:
+            - calculo_notas_ftt
+
+networks:
+    calculo_notas_ftt:

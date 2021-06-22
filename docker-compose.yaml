@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+    web_server:
+        image: nginx:1.20-alpine
+        container_name: calculo_notas_ftt_web
+        ports:
+            - 3333:80
+        volumes:
+            - ./:/usr/share/nginx/html
+        working_dir: /usr/share/nginx/html
+        networks:
+            - calculo_notas_ftt
+
+networks:
+    calculo_notas_ftt:

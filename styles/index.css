@@ -1,0 +1,153 @@
+main {
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+        linear-gradient(90deg, #FFF021, #FFF021, #FFBD24, #FFBD24, #044F9F, #044F9F, #003D7D, #003D7D);
+
+    color: white;
+
+    text-shadow: black 0 0 5px;
+}
+
+.grades-form {
+    width: 100vw;
+
+    margin: 1rem 0;
+}
+
+.grades-form fieldset {
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grades-form fieldset legend {
+    line-height: 2rem;
+
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.grades-block {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    overflow: auto;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 0 0.25rem;
+}
+
+.input-block label {
+    line-height: 1.5rem;
+
+    font-size: 1.25rem;
+
+    margin-top: 0.5rem;
+}
+
+.input-block input {
+    height: 2.5rem;
+    width: 6rem;
+
+    font-size: 2rem;
+
+    text-align: center;
+
+    border: 0;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+    border-radius: calc(2.5rem / 4);
+
+    margin: 0.5rem 0;
+
+    background-color: rgba(0, 0, 0, 0.1);
+
+    color: white;
+}
+
+.input-block input:disabled {
+    border-left-color: black;
+    border-right-color: black;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-block input:focus {
+    outline: 0;
+
+    border-bottom-width: 2px;
+}
+
+.help {
+    cursor: pointer;
+}
+
+#modal-calc {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    z-index: 999;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.close {
+    height: 1.5rem;
+    width: 1.5rem;
+
+    position: absolute;
+
+    right: 1rem;
+    top: 1rem;
+}
+
+.calc-block {
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    color: red;
+
+    font-size: 1.5rem;
+}

@@ -1,0 +1,16 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 750px) {
+    :root {
+        font-size: 20px;
+    }
+}

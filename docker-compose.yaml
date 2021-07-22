@@ -3,7 +3,7 @@ version: "3.8"
 services:
   api_server:
     build:
-      context: ./
+      context: ./docker
     container_name: calculo_notas_ftt_api
     ports:
       - 3000:80

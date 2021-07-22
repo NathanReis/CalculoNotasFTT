@@ -50,5 +50,5 @@ docker-compose up -d
 
 6. Acessando a api
 
-Nesse ponto a API já esta pronta para uso, para facilitar seu uso, importe o arquivo "InsonminiaApiCollection.json" em
+Nesse ponto a API já esta pronta para uso, para facilitar seu uso, importe o arquivo "InsomniaApiCollection.json" em
 algum Postman da vida.

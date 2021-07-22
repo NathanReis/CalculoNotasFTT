@@ -1,0 +1,125 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-07-21T15:34:53.246Z",
+  "__export_source": "insomnia.desktop.app:v2021.4.1",
+  "resources": [
+    {
+      "_id": "req_ded2bb33400a4f1090f0a71a49e90c9c",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1626880656747,
+      "created": 1623679065694,
+      "url": "{{ _.baseURI }}/calc-average-1/0.0/0.0",
+      "name": "Calcular M1",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1623679065694,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "parentId": null,
+      "modified": 1623679053446,
+      "created": 1623679053446,
+      "name": "ApiCalculoNotasFTT",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_5151d2e59a944e45a454798a9357a2dd",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1626880664224,
+      "created": 1623699138226,
+      "url": "{{ _.baseURI }}/calc-average-2/0.0/0.0/0.0",
+      "name": "Calcular M2",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1622790801130.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_17c6a2023e2045ec8eba716fbf011cb4",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1626880675565,
+      "created": 1623699160810,
+      "url": "{{ _.baseURI }}/calc-final-average/0.0/0.0",
+      "name": "Calcular MF",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1622790801080.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_6031412099fb805b5fa1469151c4693ff6606130",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1626880700698,
+      "created": 1623679053505,
+      "name": "Base Environment",
+      "data": {
+        "baseURI": "localhost:3000"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseURI"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1623679053505,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_6031412099fb805b5fa1469151c4693ff6606130",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1623679053507,
+      "created": 1623679053507,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_50c7141428f44ba39fea71f7617520ec",
+      "parentId": "wrk_b2840550e80c4da89ff6edf9ae04505e",
+      "modified": 1623679053448,
+      "created": 1623679053448,
+      "fileName": "ApiCalculoNotasFTT",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

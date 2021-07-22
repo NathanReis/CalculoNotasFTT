@@ -1,25 +1,25 @@
 {
-    "name": "nathanreis/api-calculo-notas-ftt",
-    "description": "API contendo os todos calculos de notas",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Nathan Reis",
-            "email": "nathansilvareis@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "minimum-stability": "stable",
-    "autoload": {
-        "psr-4": {
-            "App\\": "source/"
-        }
-    },
-    "require": {
-        "php": "8.0.*",
-        "slim/slim": "4.8.*",
-        "slim/psr7": "1.*",
-        "vlucas/phpdotenv": "5.3.*"
+  "name": "nathanreis/api-calculo-notas-ftt",
+  "description": "API contendo os todos calculos de notas",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nathan Reis",
+      "email": "nathansilvareis@gmail.com",
+      "role": "Developer"
     }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "App\\": "source/"
+    }
+  },
+  "require": {
+    "php": "8.0.*",
+    "slim/slim": "4.8.*",
+    "slim/psr7": "1.*",
+    "vlucas/phpdotenv": "5.3.*"
+  }
 }

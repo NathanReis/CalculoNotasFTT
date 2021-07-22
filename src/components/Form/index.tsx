@@ -6,43 +6,43 @@ import "./style.css";
 import { IInputProps, Input } from "../Input";
 
 interface IFormProps {
-    legend: string;
-    onClickHelp: MouseEventHandler<SVGElement>;
-    grades: IInputProps[];
-    average: IInputProps;
+  legend: string;
+  onClickHelp: MouseEventHandler<SVGElement>;
+  grades: IInputProps[];
+  average: IInputProps;
 }
 
 export function Form(props: IFormProps) {
-    let {
-        legend,
-        onClickHelp,
-        grades,
-        average
-    } = props;
+  let {
+    legend,
+    onClickHelp,
+    grades,
+    average
+  } = props;
 
-    return (
-        <form className="grades-form">
-            <fieldset>
-                <legend>
-                    {legend}
-                    <MdHelpOutline className="help" onClick={onClickHelp} />
-                </legend>
+  return (
+    <form className="grades-form">
+      <fieldset>
+        <legend>
+          {legend}
+          <MdHelpOutline className="help" onClick={onClickHelp} />
+        </legend>
 
-                <div className="grades-block">
-                    {
-                        grades.map((inputProps) => {
-                            return (
-                                <Input
-                                    key={inputProps.id}
-                                    {...inputProps}
-                                />
-                            );
-                        })
-                    }
-                </div>
+        <div className="grades-block">
+          {
+            grades.map((inputProps) => {
+              return (
+                <Input
+                  key={inputProps.id}
+                  {...inputProps}
+                />
+              );
+            })
+          }
+        </div>
 
-                <Input {...average} />
-            </fieldset>
-        </form>
-    );
+        <Input {...average} />
+      </fieldset>
+    </form>
+  );
 }

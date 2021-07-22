@@ -1,17 +1,17 @@
 version: "3.8"
 
 services:
-    web_server:
-        image: node:14.17-alpine
-        container_name: calculo_notas_ftt_web
-        ports:
-            - 3333:3000
-        volumes:
-            - ./:/app
-        working_dir: /app
-        command: sh -c "yarn && yarn start"
-        networks:
-            - calculo_notas_ftt
+  web_server:
+    image: node:14.17-alpine
+    container_name: calculo_notas_ftt_web
+    ports:
+      - 3333:3000
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: sh -c "yarn && yarn start"
+    networks:
+      - calculo_notas_ftt
 
 networks:
-    calculo_notas_ftt:
+  calculo_notas_ftt:
